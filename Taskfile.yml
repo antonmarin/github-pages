@@ -3,19 +3,25 @@ version: "2"
 
 tasks:
   lint:
+    desc: "Quick syntax tests"
+#   ignore because we use `build-base` apk package
     cmds:
       - docker run --rm -tv ${PWD}:/app hadolint/hadolint:v1.8.0
-        hadolint
+        hadolint --ignore=DL3018
         /app/alpine/Dockerfile
         /app/debian/Dockerfile
 
   test:
+    desc: "Test building containers. Use `task test GEM_VERSION=123` to test GEM_VERSION"
     deps: [lint]
     cmds:
       - docker build alpine/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
       - docker build debian/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
 
   release:
+    desc:
+      "Use `task release GEM_VERSION=123` to test GEM_VERSION.
+      Use `git push --follow-tags` when you are sure it's ok."
     cmds:
       - task: test
         vars:
