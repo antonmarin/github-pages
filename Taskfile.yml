@@ -1,0 +1,16 @@
+---
+version: "2"
+
+tasks:
+  lint:
+    cmds:
+      - docker run --rm -tv ${PWD}:/app hadolint/hadolint:v1.8.0
+        hadolint
+        /app/alpine/Dockerfile
+        /app/debian/Dockerfile
+
+  test:
+    deps: [lint]
+    cmds:
+      - docker build alpine/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
+      - docker build debian/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
