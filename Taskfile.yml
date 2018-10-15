@@ -14,3 +14,13 @@ tasks:
     cmds:
       - docker build alpine/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
       - docker build debian/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
+
+  release:
+    cmds:
+      - task: test
+        vars:
+          GEM_VERSION:
+            sh: echo {{ .GEM_VERSION }}
+      - docker run --rm -it -v $PWD:/app -w /app busybox sed
+        -i"" "s/^ARG\ GEM_VERSION=.*/ARG\ GEM_VERSION={{ .GEM_VERSION }}/" */Dockerfile
+      -

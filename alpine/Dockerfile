@@ -1,1 +1,2 @@
 FROM ruby:2.5.1-alpine
+ARG GEM_VERSION=190
