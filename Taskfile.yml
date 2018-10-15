@@ -23,4 +23,6 @@ tasks:
             sh: echo {{ .GEM_VERSION }}
       - docker run --rm -it -v $PWD:/app -w /app busybox sed
         -i"" "s/^ARG\ GEM_VERSION=.*/ARG\ GEM_VERSION={{ .GEM_VERSION }}/" */Dockerfile
-      -
+      - git add . &&
+        git commit -m "Release with GEM_VERSION {{ .GEM_VERSION }}" &&
+        git tag {{ .GEM_VERSION }}
