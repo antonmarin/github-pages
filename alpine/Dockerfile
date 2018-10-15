@@ -1,5 +1,5 @@
 FROM ruby:2.5.1-alpine
-ARG GEM_VERSION=190
+ARG GEM_VERSION=191
 WORKDIR /tmp/github-pages
 RUN apk add --no-cache --virtual .build_deps \
     build-base \
