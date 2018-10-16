@@ -20,13 +20,13 @@ More info about starting github-pages locally you can find [here](https://help.g
 
 ### `latest`
 
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest.svg?style=flat)
+[![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
 
 Image based on debian, builds on master
 
 ### `latest-alpine`
 
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest-alpine.svg?style=flat)
+[![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest-alpine.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
 
 Image based on alpine, builds on master
 
