@@ -2,8 +2,7 @@
 
 [![dockeri.co](http://dockeri.co/image/antonmarin/github-pages)](https://hub.docker.com/r/antonmarin/github-pages/)
 
-[![GitHub issues](https://img.shields.io/github/issues/antonmarin/github-pages.svg "GitHub issues")](https://github.com/nodejs/docker-node)
-[![GitHub stars](https://img.shields.io/github/stars/antonmarin/github-pages.svg "GitHub stars")](https://github.com/nodejs/docker-node)
+[![GitHub issues](https://img.shields.io/github/issues/antonmarin/github-pages.svg "GitHub issues")](https://github.com/nodejs/docker-node) [![GitHub stars](https://img.shields.io/github/stars/antonmarin/github-pages.svg "GitHub stars")](https://github.com/nodejs/docker-node)
 
 Simple images to run github-pages locally
 
