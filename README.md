@@ -2,7 +2,7 @@
 
 [![dockeri.co](http://dockeri.co/image/antonmarin/github-pages)](https://hub.docker.com/r/antonmarin/github-pages/)
 
-[![GitHub issues](https://img.shields.io/github/issues/antonmarin/github-pages.svg "GitHub issues")](https://github.com/nodejs/docker-node) [![GitHub stars](https://img.shields.io/github/stars/antonmarin/github-pages.svg "GitHub stars")](https://github.com/nodejs/docker-node)
+[![GitHub issues](https://img.shields.io/github/issues/antonmarin/github-pages.svg "GitHub issues")](https://github.com/antonmarin/github-pages) [![GitHub stars](https://img.shields.io/github/stars/antonmarin/github-pages.svg "GitHub stars")](https://github.com/antonmarin/github-pages)
 
 Simple images to run github-pages locally
 
@@ -20,21 +20,25 @@ More info about starting github-pages locally you can find [here](https://help.g
 
 ### `latest`
 
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest.svg)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest.svg?style=flat)
 
 Image based on debian, builds on master
 
 ### `latest-alpine`
 
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest-alpine.svg)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/latest-alpine.svg?style=flat)
 
 Image based on alpine, builds on master
 
 ### `<version>`
 
+[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:192.svg)](https://microbadger.com/images/antonmarin/github-pages:192) ![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/192.svg?style=flat)
+
 Image based on debian, builds on release
 
 ### `<version>-alpine`
+
+[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:192-alpine.svg)](https://microbadger.com/images/antonmarin/github-pages:192-alpine) ![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/192-alpine.svg?style=flat)
 
 Image based on alpine, builds on release
  

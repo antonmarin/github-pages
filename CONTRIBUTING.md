@@ -20,7 +20,7 @@ We use [go-task/task](https://github.com/go-task/task) as task runner, so visit 
 
 Use `task release GEM_VERSION=123`. 
 It tests building, replaces GEM_VERSION in Dockerfiles, and commit all changes as GEM_VERSION tag.
-Next you can check everything and push using `git push --follow-tags`
+Next you can check everything and push using `git push --follow-tags`. Remember about README.md
 
 Every push in master releases `latest*` images.
 Every `[0-9]+` tag releases `[tag]*` images.
