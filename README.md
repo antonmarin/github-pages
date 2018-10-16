@@ -9,6 +9,12 @@ Simple images to run github-pages locally
 
 To use just run `docker run --rm -v $PWD:/app -p 4000:4000 antonmarin/github-pages`
 
+Image don't creates Gemfile, so create it yourself with
+```
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+```
+
 More info about starting github-pages locally you can find [here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 ## Image variants
