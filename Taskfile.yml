@@ -11,6 +11,13 @@ tasks:
         /app/alpine/Dockerfile
         /app/debian/Dockerfile
 
+  build:
+    desc: "Build current images as latest"
+    deps: [lint]
+    cmds:
+      - docker build alpine/ --tag antonmarin/github-pages:latest-alpine
+      - docker build debian/ --tag antonmarin/github-pages:latest
+
   test:
     desc: "Test building containers. Use `task test GEM_VERSION=123` to test GEM_VERSION"
     deps: [lint]
