@@ -16,6 +16,8 @@ gem 'github-pages', group: :jekyll_plugins
 
 More info about starting github-pages locally you can find [here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
+And [here](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/) about adding theme
+
 ## Image variants
 
 ### `latest`
