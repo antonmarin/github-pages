@@ -10,13 +10,13 @@ To use just run `docker run --rm -v $PWD:/app -p 4000:4000 antonmarin/github-pag
 
 Image creates some required files if you don't have them: 
 
-Gemfile with
+`Gemfile` with
 ```
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 ```
 
-.gitignore with
+`.gitignore` with
 ```
 .sass-cache/
 _site/
@@ -24,7 +24,7 @@ Gemfile
 Gemfile.lock
 ```
 
-Gemfile required only locally, so you can add it to your .gitignore manually if you already have one
+`Gemfile` required only locally, so you can add it to your `.gitignore` manually if you already have one
 
 More info about github-pages you can find [here](https://help.github.com/categories/customizing-github-pages/)
 
