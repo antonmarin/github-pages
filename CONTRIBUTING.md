@@ -10,21 +10,21 @@ We use [go-task/task](https://github.com/go-task/task) as task runner, so visit 
 
 ## Build
 
-[Autobuild](https://docs.docker.com/docker-hub/builds/) is set up.
+`task`
 
 ## Test
 
-`task test GEM_VERSION=123`
+`task`
 
 ## Release
 
 Use `task release GEM_VERSION=123`. 
-It tests building, replaces GEM_VERSION in Dockerfiles, and commit all changes as GEM_VERSION tag.
-Next you can check everything and push using `git push --follow-tags`. Remember about README.md
-
-Every push in master releases `latest*` images.
-Every `[0-9]+` tag releases `[tag]*` images.
 
 ## Deploy
 
 [Docker Hub](https://hub.docker.com/r/antonmarin/github-pages/)
+
+[Autobuild](https://docs.docker.com/docker-hub/builds/) is set up.
+
+Every push in master = `latest*` images.
+Every `[0-9]+` tag = `[tag]*` images.

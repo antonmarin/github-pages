@@ -38,11 +38,6 @@ tasks:
 
   release:
     desc:
-      "Use `task release GEM_VERSION=123` to test and release.
-      Use `git push --follow-tags` when you are sure it's ok."
+      "Use `task release GEM_VERSION=123` to release."
     cmds:
-      - docker build alpine/
-      - docker build debian/
-      - git add . &&
-        git commit -m "Release with GEM_VERSION {{ .GEM_VERSION }}" &&
-        git tag {{ .GEM_VERSION }}
+      - git tag {{ .GEM_VERSION }} && git push --follow-tags
