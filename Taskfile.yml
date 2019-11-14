@@ -40,4 +40,4 @@ tasks:
     desc:
       "Use `task release GEM_VERSION=123` to release."
     cmds:
-      - git tag {{ .GEM_VERSION }} && git push --follow-tags
+      - git tag {{ .GEM_VERSION }} && git push --follow-tags --tags
