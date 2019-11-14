@@ -15,15 +15,15 @@ tasks:
     desc: "Build current images as latest. Suitable while developing"
     deps: [lint]
     cmds:
-      - docker build alpine/ --tag antonmarin/github-pages:latest-alpine
-      - docker build debian/ --tag antonmarin/github-pages:latest
+      - docker build -f alpine/Dockerfile . --tag antonmarin/github-pages:latest-alpine
+      - docker build -f debian/Dockerfile . --tag antonmarin/github-pages:latest
 
   test:
     desc: "Test building containers. Use `task test GEM_VERSION=123` to test GEM_VERSION"
     deps: [lint]
     cmds:
-      - docker build alpine/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
-      - docker build debian/ --build-arg GEM_VERSION={{ .GEM_VERSION }}
+      - docker build -f alpine/Dockerfile . --build-arg GEM_VERSION={{ .GEM_VERSION }}
+      - docker build -f debian/Dockerfile . --build-arg GEM_VERSION={{ .GEM_VERSION }}
 
   update:
     desc:

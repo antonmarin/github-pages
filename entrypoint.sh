@@ -14,4 +14,4 @@ gem 'github-pages', group: :jekyll_plugins
 EOF
 fi
 bundle install
-jekyll serve -H 0.0.0.0 -P 4000
+jekyll "$@"
