@@ -1,5 +1,5 @@
 FROM ruby:2.5.1-alpine
-ARG GEM_VERSION=193
+ARG GEM_VERSION=202
 LABEL org.label-schema.vcs-url="https://github.com/antonmarin/github-pages"
 WORKDIR /tmp/github-pages
 RUN apk add --no-cache --virtual .build_deps \
