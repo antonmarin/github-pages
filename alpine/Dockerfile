@@ -11,7 +11,8 @@ RUN apk add --no-cache --virtual .build_deps \
     bundler add github-pages --group "jekyll_plugins" --version "${GEM_VERSION}" && \
     apk del .build_deps
 COPY entrypoint.sh /usr/local/bin/entrypoint
-CMD ["entrypoint"]
+ENTRYPOINT ["entrypoint"]
+CMD ["serve", "-H", "0.0.0.0", "-P", "4000"]
 
 WORKDIR /app
 EXPOSE 4000
