@@ -26,6 +26,8 @@ Gemfile.lock
 
 `Gemfile` required only locally, so you can add it to your `.gitignore` manually if you already have one
 
+Delete `Gemfile.lock` when you upgrade image version to avoid conflicts
+
 More info about github-pages you can find [here](https://help.github.com/categories/customizing-github-pages/)
 
 ## Image variants
