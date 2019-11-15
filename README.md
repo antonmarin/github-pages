@@ -6,7 +6,8 @@
 
 Simple images to run github-pages locally
 
-To use just run `docker run --rm -v $PWD:/app -p 4000:4000 antonmarin/github-pages`
+To use just run `docker run --rm -v $PWD:/app -p 4000:4000 antonmarin/github-pages` 
+or you can get `jekyll --help` by `docker run --rm -v $PWD:/app -p 4000:4000 antonmarin/github-pages --help`
 
 Image creates some required files if you don't have them: 
 
