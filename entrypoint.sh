@@ -11,7 +11,7 @@ if [ ! -f Gemfile ]; then
     cat << EOF > Gemfile
 source 'https://rubygems.org'
 group :jekyll_plugins do
-    gem 'github-pages'
+    gem 'github-pages', "= ${GEM_VERSION}"
     gem 'jekyll-paginate'
     gem 'jekyll-sitemap'
     gem 'jekyll-gist'
