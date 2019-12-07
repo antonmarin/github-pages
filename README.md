@@ -47,13 +47,13 @@ Image based on alpine, builds on master
 
 ### `<version>`
 
-[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:202.svg)](https://microbadger.com/images/antonmarin/github-pages:202) [![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/202.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
+[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:203.svg)](https://microbadger.com/images/antonmarin/github-pages:203) [![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/203.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
 
 Image based on debian, builds on release
 
 ### `<version>-alpine`
 
-[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:202-alpine.svg)](https://microbadger.com/images/antonmarin/github-pages:202-alpine) [![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/202-alpine.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
+[![](https://images.microbadger.com/badges/version/antonmarin/github-pages:203-alpine.svg)](https://microbadger.com/images/antonmarin/github-pages:203-alpine) [![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/antonmarin/github-pages/203-alpine.svg?style=flat)](https://hub.docker.com/r/antonmarin/github-pages/)
 
 Image based on alpine, builds on release
  

@@ -1,5 +1,5 @@
 FROM ruby:2.5.1
-ARG GEM_VERSION=202
+ARG GEM_VERSION=203
 ENV GEM_VERSION=${GEM_VERSION}
 LABEL org.label-schema.vcs-url="https://github.com/antonmarin/github-pages"
 WORKDIR /tmp/github-pages
