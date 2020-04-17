@@ -21,12 +21,10 @@ release:
 	git tag $(GEM_VERSION) && git push --follow-tags --tags
 
 test: lint
-	docker build -f alpine/Dockerfile . \
-		--build-arg GEM_VERSION=$(GEM_VERSION) \
-		--tag antonmarin/github-pages:$(GEM_VERSION)-alpine && \
-	docker build -f debian/Dockerfile . \
-		--build-arg GEM_VERSION=$(GEM_VERSION) \
-		--tag antonmarin/github-pages:$(GEM_VERSION)
+	docker-compose -f alpine/docker-compose.test.yml build --build-arg GEM_VERSION=$(GEM_VERSION) && \
+	docker-compose -f alpine/docker-compose.test.yml run --rm sut && \
+	docker-compose -f debian/docker-compose.test.yml build --build-arg GEM_VERSION=$(GEM_VERSION) && \
+	docker-compose -f debian/docker-compose.test.yml run --rm sut
 
 update: test
 	docker run --rm -it -v $(PWD):/app -w /app busybox sed \

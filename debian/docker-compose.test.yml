@@ -4,7 +4,7 @@ services:
   sut:
     build:
       context: ../
-      dockerfile: alpine/Dockerfile
+      dockerfile: debian/Dockerfile
     volumes:
       - ../tests:/tmp/tests
       - ../tests/app:/app
