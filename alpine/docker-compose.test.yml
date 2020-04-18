@@ -6,6 +6,6 @@ services:
       context: ../
       dockerfile: alpine/Dockerfile
     volumes:
-      - ../tests:/tmp/tests
-      - ../tests/app:/app
-    command: build
+      - ../tests:/app/tests
+    entrypoint: ''
+    command: /app/tests/test.sh

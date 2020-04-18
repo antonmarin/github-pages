@@ -10,12 +10,15 @@ help:
 		update\t\t update Dockerfile GEM_VERSIONs to GEM_VERSION. Use \`make GEM_VERSION=123 update\` to update Dockerfiles \n\
 	"
 
-lint: lint-dockerfile
+lint: lint-dockerfile lint-shell
 lint-dockerfile:
 	docker run --rm -tv $(PWD):/app hadolint/hadolint:v1.8.0 \
 		hadolint \
 		/app/alpine/Dockerfile \
 		/app/debian/Dockerfile
+lint-shell:
+	docker run -tv "$(PWD):/mnt" koalaman/shellcheck:v0.5.0 \
+		--color=always --shell=sh --exclude=SC2181 ./*.sh
 
 release:
 	git tag $(GEM_VERSION) && git push --follow-tags --tags

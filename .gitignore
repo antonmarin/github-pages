@@ -1,1 +1,2 @@
-tests/app/_site
+tests/_site
+Gemfile*
