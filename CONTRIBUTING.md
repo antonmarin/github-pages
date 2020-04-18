@@ -10,15 +10,15 @@ We use [go-task/task](https://github.com/go-task/task) as task runner, so visit 
 
 ## Build
 
-`task`
+`make`
 
 ## Test
 
-`task`
+`make`
 
 ## Release
 
-Use `task release GEM_VERSION=123`. 
+Use `make GEM_VERSION=123 release`. 
 
 ## Deploy
 

@@ -1,0 +1,11 @@
+---
+version: "3.5"
+services:
+  sut:
+    build:
+      context: ../
+      dockerfile: alpine/Dockerfile
+    volumes:
+      - ../tests:/app/tests
+    entrypoint: ''
+    command: /app/tests/test.sh
