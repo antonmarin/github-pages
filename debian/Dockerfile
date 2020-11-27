@@ -1,5 +1,5 @@
 FROM ruby:2.6.6-stretch
-ARG GEM_VERSION=204
+ARG GEM_VERSION=209
 ENV GEM_VERSION=${GEM_VERSION}
 LABEL org.label-schema.vcs-url="https://github.com/antonmarin/github-pages"
 RUN apt-get update && apt-get install -y --no-install-recommends \
