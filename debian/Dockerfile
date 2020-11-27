@@ -4,7 +4,7 @@ ENV GEM_VERSION=${GEM_VERSION}
 ENV LC_ALL="en_US.UTF-8"
 LABEL org.label-schema.vcs-url="https://github.com/antonmarin/github-pages"
 RUN apt-get update && apt-get install -y \
-      locales \
+      locales=2.24-11+deb9u4 \
       && rm -rf /var/lib/apt/lists/* \
       && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
       && locale-gen en_US.UTF-8
