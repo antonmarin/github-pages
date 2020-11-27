@@ -3,8 +3,6 @@ if [ ! -f .gitignore ]; then
     cat << EOF > .gitignore
 .sass-cache/
 _site/
-Gemfile
-Gemfile.lock
 EOF
 fi
 if [ ! -f Gemfile ]; then
