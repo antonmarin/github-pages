@@ -10,3 +10,4 @@ testTheme() {
 
 testTheme "architect"
 testTheme "cayman"
+testTheme "minimal-mistakes"
